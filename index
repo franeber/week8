@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <p id="edit">this will be edited</p>
+  <button type="button" name="button" onclick="colour()">press me</button>
+  <button type="button" onclick="changeButton();" name="button">click me</button>
+  </button>
+  <script type="text/javascript">
+
+    function changeButton(){
+      document.getElementById("edit").innerHTML="Goodbye everybody";
+    }
+
+    function colour(){
+      var changeMe = document.getElementById("edit")
+      changeMe.style.color = "red"
+    }
+
+    var num = prompt("Enter the first number ", "");
+        var num2 = prompt("Enter the second number ", "")
+        var numInt = parseInt(num);
+        var numInt2 = parseInt(num2);
+
+
+        var answer = numInt * numInt2;
+        document.writeln("Result of multiplication = " + answer);
+        document.write("<br>")
+        alert("Result of multiplication "+ answer)
+
+        
+  </script>
+
+  
+</body>
+</html>
+
+
+
